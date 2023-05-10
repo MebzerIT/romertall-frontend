@@ -1,31 +1,23 @@
 import react from 'react';
+import { useState } from 'react';
+import HistoryContainer from "../containers/HistoryContainer";
 
 const ShowHistory = () => {
 
-const handleClick = async  () => {
-        await HistoryContainer();
-      };
+    const [showHistory, setShowHistory] = useState(false);
 
-return (   
+    const handleClickHistory = () => {
+             setShowHistory(true);
+        };
+
+  return (   
       <>
-        <button className="osg-button osg-button--outline" onClick={handleClick}>
+        <button className="osg-button osg-button--outline" onClick={handleClickHistory}>
             Konvertering Historikk
         </button>
-        <div>
-            <h3>Convertion History</h3>
-            <ul>
-                {historyData.map((historyItem, index) => (
-                    <li key={index}>
-                        Converted {historyItem.romertall} to {historyItem.integertall} on{' '}
-                        {new Date(historyItem.opprettetKl).toLocaleString()}
-                    </li>
-                ))}
-            </ul>
-        </div>
-        </>
-  
-    );
-
+        {showHistory && <HistoryContainer />}     
+     </>
+   );
 };
 
 export default ShowHistory;

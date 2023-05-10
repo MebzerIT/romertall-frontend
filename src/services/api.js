@@ -1,4 +1,4 @@
-const CONVERTION_API_URL = "http://localhost:8000/api/v1/romertall?param=${value}";
+const CONVERTION_API_URL = "http://localhost:8000/api/v1/romertall?parma=";
 
 const HISTORY_API_URL = "http://localhost:8000/api/v1/konverteringer/historikk";
 
