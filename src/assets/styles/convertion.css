@@ -1,0 +1,13 @@
+.inputField {
+    display: flex;
+    margin-bottom: 10px;;
+  }
+  
+  .osg-input {
+    margin-right: 10px; /* Optional: Add some spacing between input and button */
+    width: 100%
+  }
+  
+  .osg-button {
+    /* Add any necessary styles for the button */
+  }

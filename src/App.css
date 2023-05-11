@@ -1,0 +1,24 @@
+.App {
+    /* Styles for the parent container (App) */
+  }
+  
+.main {
+    /* Styles for the main container */
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100%; 
+    overflow-y: auto;
+    margin-top: 50px;
+  }
+  .osg-grid.osg-grid--gutter{
+    display: flex;
+    background-color: #b3f5ff;
+    margin-left: auto;
+    margin-right: auto;
+    height:100vh;
+    width: 80%;
+    
+  }

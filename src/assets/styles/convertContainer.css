@@ -1,0 +1,11 @@
+.osg-landscape-card.osg-landscape-card--no-image{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    width:100%;
+}
+
+.osg-landscape-card__content{
+    margin-top: 10px;
+    border: 2px solid #2a2859;
+    width: 481px;
+}
