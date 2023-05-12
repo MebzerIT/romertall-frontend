@@ -4,10 +4,15 @@
   }
   
   .osg-input {
-    margin-right: 10px; /* Optional: Add some spacing between input and button */
+    margin-right: 10px;
     width: 100%
   }
   
-  .osg-button {
-    /* Add any necessary styles for the button */
+  .inputField .osg-button.osg-button--outline {
+    padding-top: 3px;
+    padding-bottom: 2px;
+    margin-top: 8px;
+    line-height: normal;
+    font-size: medium;
+
   }

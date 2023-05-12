@@ -7,12 +7,12 @@ const ShowHistory = () => {
     const [showHistory, setShowHistory] = useState(false);
 
     const handleClickHistory = () => {
-             setShowHistory(true);
+             setShowHistory(prevShowHistory => !prevShowHistory);
         };
 
   return (   
       <>
-        <button className="osg-button osg-button--outline" onClick={handleClickHistory}>
+        <button className="osg-button osg-button--outline history" onClick={handleClickHistory}>
             Konvertering Historikk
         </button>
         {showHistory && <HistoryContainer />}     

@@ -9,3 +9,9 @@
     border: 2px solid #2a2859;
     width: 481px;
 }
+
+.osg-landscape-card__heading{
+    margin-bottom: 1px;
+    font-weight: 500;
+    text-align: left;
+}

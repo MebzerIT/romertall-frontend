@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import ConvertionField from '../components/ConvertionField';
 import { fetchConvertion } from '../services/api';
+import '../assets/styles/osg.css';
 import '../assets/styles/convertContainer.css';
 
 const ConvertContainer = () => {

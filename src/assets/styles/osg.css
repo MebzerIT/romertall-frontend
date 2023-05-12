@@ -1,0 +1,10 @@
+.osg-divider.osg-divider--blue-light,.osg-landscape-card--blue-light .osg-landscape-card__content,.osg-color-bg-blue-light {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+   
+}
+
+
+.osg-divider.osg-divider--beige,.osg-table__body .osg-table__row:nth-child(odd),.osg-content table tbody .osg-table__row:nth-child(odd),.osg-table__body .osg-content table tr:nth-child(odd),.osg-content table .osg-table__body tr:nth-child(odd),.osg-content table tbody tr:nth-child(odd),.osg-color-bg-beige {
+    background-color:#f2f2f2;
+}

@@ -17,7 +17,7 @@ function App() {
       <div className='main'>
       {/* <h1>Romerisk tall konvertering</h1> */}
         <div class="osg-grid osg-grid--gutter">
-            <div class="osg-grid__column--6">
+            <div class="osg-grid__column--6 ">
               <div class="osg-padding-3 osg-text--align-center osg-color-bg-blue-light">
                 <ConvertContainer />
               </div>

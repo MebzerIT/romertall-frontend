@@ -8,7 +8,13 @@ const ConvertionField = ({ onConvert }) => {
   const [value, setValue] = useState('');
 
   const handleClick = () => {
-    onConvert(value);
+    //onConvert(value);
+    const romanNumeralRegex = /^(M{0,3})(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/;
+    if (value && romanNumeralRegex.test(value)) {
+      onConvert(value);
+    } else {
+      alert('Vennligst skriv inn et gyldig romertall');
+    }
   };
 
   const handleChange = (event) => {
@@ -23,11 +29,11 @@ const ConvertionField = ({ onConvert }) => {
           type="text"
           autoComplete="on"
           aria-label="Label text"
-          placeholder="Angi romerisk tall"
+          placeholder="Romerisk tall"
           value={value}
           onChange={handleChange} />
       </div>
-      <button className="osg-button osg-button--outline" onClick={handleClick}>
+      <button className="osg-button osg-button--outline convert" onClick={handleClick}>
           Konvertere
       </button>
     </div>
